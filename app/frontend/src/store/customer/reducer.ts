@@ -85,7 +85,6 @@ export function customerReducer(state = initialState, action: CustomerActionsTyp
         }
       };
     case GET_REMOTE:
-      console.log(action);
       return {
         ...state,
         customers: action.payload
@@ -118,13 +117,11 @@ export function customerReducer(state = initialState, action: CustomerActionsTyp
         }
       };
     case SET_CUSTOMER:
-      console.log(action);
       return {
         ...state,
         selected: action.payload
       };
     case SEARCH_CUSTOMER:
-      console.log(action);
       return {
         ...state,
         resultFind: action.payload

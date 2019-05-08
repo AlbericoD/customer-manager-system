@@ -16,7 +16,7 @@ customer.get('/search/:any', controller.search);
 // Create a Customers with not exist
 customer.post('/', controller.create);
 
-// Delete a Customers wby doc
+// Delete a Customers by doc
 customer.delete('/', controller.remove);
 
 export default customer;

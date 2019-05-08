@@ -28,7 +28,6 @@ export default class CustomerController {
 
   public search = async (req: Request, res: Response): Promise<any> => {
     const query = new RegExp(req.params.any, 'i');
-    console.log(query);
     try {
       const customer = await Customer.find({
         $or: [
@@ -129,7 +128,6 @@ export default class CustomerController {
   public remove = async (req: Request, res: Response): Promise<any> => {
     try {
       const { doc } = req.body;
-      console.log(doc);
       const customer = await Customer.findOneAndDelete({ doc });
 
       if (!customer) {

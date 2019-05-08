@@ -56,7 +56,7 @@ export class CustomerService {
   public createCustomer(): ThunkAction<void, AppState, {}, AnyAction> {
     return async (dispatch, store) => {
       dispatch(loadRemote(true));
-      const { customer } = store().customerReducer;
+      const { customer, customers } = store().customerReducer;
       const init: RequestInit = {
         headers: this._makeHeader(),
         body: JSON.stringify(customer),
@@ -71,18 +71,17 @@ export class CustomerService {
         if (!success) throw new Error(response.message);
         dispatch(resetForm());
         dispatch(toggleSuccess(success));
-        dispatch(this.list());
-        //dispach sucess message
+        dispatch(listCustomers([...customers, customer]));
       } catch (error) {
         console.error(error);
         dispatch(loadRemote(false));
         dispatch(appendErrors(true));
-        // dispach error message
       }
     };
   }
   public deleteCustomer(doc: string): ThunkAction<void, AppState, {}, AnyAction> {
-    return async dispatch => {
+    return async (dispatch, store) => {
+      const { customers } = store().customerReducer;
       dispatch(loadRemote(true));
       const init: RequestInit = {
         headers: this._makeHeader(),
@@ -94,7 +93,7 @@ export class CustomerService {
         //@ts-ignore
         await this._api<IResponseCreate>(this.api, init);
         dispatch(loadRemote(false));
-        dispatch(this.list()); //filter and remove by doc
+        dispatch(listCustomers(customers.filter(customer => customer.doc !== doc)));
       } catch (error) {
         dispatch(loadRemote(false));
       }

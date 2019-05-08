@@ -82,7 +82,7 @@ $ cd frontend
 
 | Action                    | Usage              |
 | ------------------------- | ------------------ |
-| Starting development mode | `npm run start`    |
+| Starting development mode | `npm start`        |
 | Make production build     | `npm run build`    |
 | Running Test              | `npm t`            |
 | Running Coverage          | `npm run coverage` |

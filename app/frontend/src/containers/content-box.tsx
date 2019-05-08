@@ -5,8 +5,6 @@ import { List } from 'semantic-ui-react';
 import faker from 'faker';
 import _ from 'lodash';
 
-// const { Item } = List;
-
 export const users: IUser[] = _.times(10, num => ({
   avatar: faker.internet.avatar(),
   name: faker.name.title(),
@@ -63,14 +61,14 @@ const list: string[] = [
 export const requirements: IRequiments[] = [
   {
     title: 'Project Dev Full Stack',
-    children: <p>Desenvolver aplicação com Frontend (React e Redux) e Backend (PHP ou NodeJS).</p>
+    children: <p>Desenvolver aplicação com Frontend (React e Redux) e Backend (NodeJS).</p>
   },
   {
     title: 'História de usuário',
     children: (
       <p>
-        Eu como gerente do restaurante de Santa Bárbara d’Oeste gostaria de cadastrar todos os
-        clientes que fazem pedidos para entrega.
+        Eu como gerente do restaurante X gostaria de cadastrar todos os clientes que fazem pedidos
+        para entrega.
       </p>
     )
   },

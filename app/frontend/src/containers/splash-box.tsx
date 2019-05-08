@@ -6,7 +6,7 @@ const { Group } = Segment;
 export const SplashBox: FunctionComponent = () => (
   <Group>
     <Segment>
-      <Header as='h2'>Acruxx</Header>
+      <Header as='h2'>Restaurant</Header>
     </Segment>
     {requirements.map((requirement, index) => (
       <Segment key={index}>

@@ -30,7 +30,7 @@ const App: FunctionComponent = () => {
 
   useInterval(() => {
     if (delay > 10) setDelay(delay / 2.4);
-  }, 1);
+  }, 4000);
 
   return (
     <Provider store={store}>
