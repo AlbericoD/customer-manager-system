@@ -74,7 +74,7 @@ $ cd backend
 | Starting development mode | `npm run dev`  |
 | Starting production mode  | `npm run prod` |
 
-`Fronted`
+`Frontend`
 
 ```bash
 $ cd frontend
@@ -92,7 +92,7 @@ $ cd frontend
 #### Clone the repo
 
 ```bash
-$ git clone gfdgdfgf
+$ git clone https://github.com/AlbericoD/customer-manager-system.git
 ```
 
 ### Run project dev
@@ -114,5 +114,3 @@ $ npm start or yarn start
 ## Author
 
 [Albérico Dias Barreto Filho](https://www.linkedin.com/in/albericod/)
-# customer-system
-# customer-manager-system
