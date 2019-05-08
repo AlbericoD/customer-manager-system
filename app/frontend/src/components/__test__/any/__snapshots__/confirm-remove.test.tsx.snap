@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component ConfirmRemove render snapshot 1`] = `
+<Fragment>
+  <Button
+    as="button"
+    color="youtube"
+    onClick={[Function]}
+  >
+    <Icon
+      as="i"
+      name="remove user"
+    />
+  </Button>
+  <Confirm
+    cancelButton="Cancel"
+    confirmButton="OK"
+    content="Delete Customer: test ?"
+    onCancel={[Function]}
+    onConfirm={[MockFunction]}
+    open={false}
+    size="small"
+  />
+</Fragment>
+`;

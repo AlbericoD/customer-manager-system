@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Footer render snapshot 1`] = `
+<Segment
+  inverted={true}
+  style={
+    Object {
+      "flex": "none",
+      "padding": "0.7em 0em",
+    }
+  }
+  vertical={true}
+>
+  <Container
+    textAlign="center"
+  >
+    <List
+      divided={true}
+      horizontal={true}
+      inverted={true}
+      link={true}
+      size="small"
+    >
+      <ListItem
+        as="a"
+        href="test"
+        key="0"
+        target="__blank"
+      >
+        test
+      </ListItem>
+    </List>
+  </Container>
+</Segment>
+`;

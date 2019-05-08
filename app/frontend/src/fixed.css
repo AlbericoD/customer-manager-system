@@ -1,0 +1,15 @@
+.pushable:not(body) {
+  transform: none;
+}
+
+.pushable:not(body) > .ui.sidebar,
+.pushable:not(body) > .fixed,
+.pushable:not(body) > .pusher:after {
+  position: fixed;
+}
+.ui.loading.form:before {
+  background: rgba(0, 0, 0, 0.6);
+}
+.table tr.visible.transition {
+  display: table-row !important;
+}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Header render snapshot 1`] = `
+<Menu
+  fixed="top"
+  inverted={true}
+>
+  <Container>
+    <MenuItem
+      header={true}
+    >
+      test
+    </MenuItem>
+    <MenuItem
+      as="p"
+    >
+      test
+    </MenuItem>
+  </Container>
+</Menu>
+`;

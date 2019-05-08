@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component MenuAction render snapshot 1`] = `
+<Fragment>
+  <Modal
+    basic={true}
+    centered={true}
+    closeOnDimmerClick={true}
+    closeOnDocumentClick={false}
+    dimmer={true}
+    eventPool="Modal"
+    onClose={[Function]}
+    onOpen={[Function]}
+    open={false}
+    size="small"
+    trigger={
+      <MenuItem
+        as="p"
+      >
+        <Icon
+          as="i"
+          name="user"
+        />
+        test
+      </MenuItem>
+    }
+  >
+    <Header
+      content="test"
+      icon="user"
+    />
+    <ModalContent />
+    <ModalActions>
+      <Button
+        as="button"
+        basic={true}
+        color="red"
+        inverted={true}
+        onClick={[Function]}
+      >
+        <Icon
+          as="i"
+          name="remove"
+        />
+         
+        test
+      </Button>
+    </ModalActions>
+  </Modal>
+</Fragment>
+`;

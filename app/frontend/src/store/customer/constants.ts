@@ -1,0 +1,13 @@
+export const SET_INPUT_NAME = 'SET_NAME';
+export const SET_INPUT_DOC = 'SET_CPF_CNPJ';
+export const SET_INPUT_PHONE = 'SET_PHONE';
+export const SET_INPUT_CEL = 'SET_CEL';
+export const SET_INPUT_EMAIL = 'SET_EMAIL';
+export const RESET_FORM = 'RESET_FORM';
+export const LOAD_REMOTE = 'LOAD_REMOTE';
+export const SEND_REMOTE = 'SEND_TO_API';
+export const GET_REMOTE = 'GET_CUSTOMERS_API';
+export const TOGGLE_SUCCESS = 'TOGGLE_SUCCESS';
+export const APPEND_ERRORS = 'SET_ERRORS';
+export const SEARCH_CUSTOMER = 'SEARCH_CUSTOMER';
+export const SET_CUSTOMER = 'SET_CUSTOMER';

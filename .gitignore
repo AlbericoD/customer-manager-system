@@ -1,0 +1,16 @@
+# dependencies
+/app/backend/node_modules
+/app/frontend/node_modules
+
+# testing
+/app/frontend/coverage
+
+# production
+/app/backend/dist
+/app/frontend/build
+# misc
+/app/backend/.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
